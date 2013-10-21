@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @therapist.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @therapist.location %>
+</p>
+
+<p>
+  <strong>Business:</strong>
+  <%= @therapist.business %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @therapist.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @therapist.password %>
+</p>
+
+<%= link_to 'Edit', edit_therapist_path(@therapist) %> |
+<%= link_to 'Back', therapists_path %>
