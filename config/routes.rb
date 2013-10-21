@@ -1,4 +1,6 @@
 Massage::Application.routes.draw do
+  resources :clients
+
   resources :therapists
 
   root "therapists#index"
