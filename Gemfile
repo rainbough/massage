@@ -6,6 +6,12 @@ gem 'rails', '4.0.0'
 #for heroku platform	
 gem 'rails_12factor', group: :production
 
+#debugging in development only
+group :development do
+  gem "better_errors"
+  gem 'binding_of_caller'
+  gem 'figaro'
+end
 #use hirb gem
 gem 'hirb'
 
